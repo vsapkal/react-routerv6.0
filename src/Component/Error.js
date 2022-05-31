@@ -1,15 +1,15 @@
 import React from 'react'
 import Navbar from './Navbar'
 
-function Contact() {
+function Error() {
     return (
         <>
             <header>
                 <Navbar />
             </header>
-            <div className='text-center'>Contact Page</div>
+            <h3 className='text-center'>Path is not valid</h3>
         </>
     )
 }
 
-export default Contact
+export default Error

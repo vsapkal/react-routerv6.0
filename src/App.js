@@ -5,22 +5,22 @@ import Home from './Component/Home';
 import Navbar from './Component/Navbar';
 import About from './Component/About';
 import Contact from './Component/Contact';
+import Error from './Component/Error';
 
 function App() {
   return (
     <>
-      <div className="App">
-        <h3>Welcome to the World of React Router V6.0</h3>
-      </div>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/' />
-          <Route path='/home' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
-        </Routes>
-      </Router>
+      <header>
+        <Router>
+          <Routes>
+            <Route path='/' element={<Navbar />} />
+            <Route path='/home' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='*' element={<Error />} />
+          </Routes>
+        </Router>
+      </header>
     </>
   );
 }

@@ -1,9 +1,15 @@
 import React from 'react'
+import Navbar from './Navbar';
 
 function Home() {
     return (
-        <div>Home Page</div>
+        <>
+            <header>
+                <Navbar />
+            </header>
+            <div className='text-center'>Home Page</div>
+        </>
     )
 }
 
-export default Home
+export default Home;
